@@ -83,10 +83,10 @@ while True :
     now = datetime.datetime.now()
     date = now.strftime("%Y %m %d")
     
-    filew = open(f"newss\\{date}.txt", "w")
+    filew = open(f"newss/{date}.txt", "w")
     get_hackernews()
 
-    filew = open(f"newss\\{date}.txt", "a")   
+    filew = open(f"newss/{date}.txt", "a")   
     get_reddit()
     
     filew.close()
